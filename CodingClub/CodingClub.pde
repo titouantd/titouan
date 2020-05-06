@@ -7,9 +7,10 @@ void setup ()
   
 }
 
+int move = 0;
 void draw()
 {
+  move ++;
   fill (0, 0, 255);
-  ellipse(width/2, height/2, 50, 50);
-  
+  ellipse(width/2, move, 50, 50);
 }
