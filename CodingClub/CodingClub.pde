@@ -12,8 +12,11 @@ void draw()
   ellipse(pos.x, pos.y, 50, 50);
   pos.x +=1;
   pos.y +=1;
-  if (pos.y < 100) {
+  if (pos.y > height) {
     pos.y -=1;
+  }
+ if (pos.x > height) {
+    pos.x -=1;
   }
   
   }
