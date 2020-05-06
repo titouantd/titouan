@@ -10,13 +10,15 @@ void draw()
 {
   fill (0, 0, 255);
   ellipse(pos.x, pos.y, 50, 50);
-  pos.x +=1;
-  pos.y +=1;
   if (pos.y > height) {
-    pos.y -=1;
-  }
- if (pos.x > height) {
-    pos.x -=1;
+    pos.y -=2;
+  } else {
+    pos.y +=2;
   }
   
+  if (pos.x > width) {
+    pos.x -=2;
+  }  else {
+    pos.x +=2;
   }
+}
